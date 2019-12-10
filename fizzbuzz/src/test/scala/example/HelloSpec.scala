@@ -3,7 +3,11 @@ package example
 import org.scalatest._
 
 class FizzBuzzSpec extends FlatSpec with Matchers {
-  "The FizzBuzz object" should "return 1" in {
+  "The FizzBuzz object" should "return argument passed in query" in {
     FizzBuzz.query(1) shouldEqual 1
+  }
+
+  "The FizzBuzz object" should "return Fizz if 3 is passed as query" in {
+    FizzBuzz.query(3) shouldEqual "Fizz"
   }
 }
