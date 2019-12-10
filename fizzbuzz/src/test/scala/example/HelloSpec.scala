@@ -2,8 +2,8 @@ package example
 
 import org.scalatest._
 
-class HelloSpec extends FlatSpec with Matchers {
-  "The Hello object" should "say hello" in {
-    Hello.greeting shouldEqual "hello"
+class FizzBuzzSpec extends FlatSpec with Matchers {
+  "The FizzBuzz object" should "return 1" in {
+    FizzBuzz.query(1) shouldEqual 1
   }
 }
